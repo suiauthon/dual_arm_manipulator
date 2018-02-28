@@ -559,7 +559,7 @@ int main(int argc, char **argv)
 	ros::NodeHandle n;
 	int rate;
 
-	std::string path = ros::package::getPath("mmuav_control");
+	std::string path = ros::package::getPath("dual_arm_manipulator");
 	std::string dh_parameters_file;
 
 	DualArmManipulatorControl dam_control;
