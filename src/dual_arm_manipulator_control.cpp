@@ -44,7 +44,7 @@ DualArmManipulatorControl::DualArmManipulatorControl()
 	left_manipulator_position_pub_ros_ = n_.advertise<geometry_msgs::PoseStamped>("left_manipulator/position", 1);
 	right_manipulator_position_pub_ros_ = n_.advertise<geometry_msgs::PoseStamped>("right_manipulator/position", 1);
 
-	uav_position_commanded_pub_ = n_.advertise<geometry_msgs::PoseStamped>("position_control/position_ref", 1);
+	uav_position_commanded_pub_ = n_.advertise<geometry_msgs::PoseStamped>("command/pose", 1);
 
 	Tworld_uav_origin_ << 1, 0, 0, 0,
 			  			  0, 1, 0, 0, 
